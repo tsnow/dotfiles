@@ -1,0 +1,29 @@
+help
+show dbs
+use mydatabasename
+mydatabasename.help()
+help
+help()
+db.foo.help()
+show collections
+statuses.find()
+db.statuses.find()
+db.statuses.count()
+db.statuses.findFirst()
+db.statuses.findOne()
+db.twitterers.count
+db.twitterers.count()
+db.twitterers.findOne()
+db.twitterers.findOne({'screen_name':'snowhitesolns'})
+db.twitterers.findOne({'screen_name':'snowhitesolns'}).friend_ids
+helpe
+db.foo.find().help
+db.foo.find().help()
+help
+show dbs
+use mydatabasename
+help
+show collections
+show twitterers
+db.twitterers.find()
+db.twitterers.count()

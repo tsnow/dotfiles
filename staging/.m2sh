@@ -1,0 +1,6 @@
+help
+start
+start -host localhost
+exit
+quit
+running

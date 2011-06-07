@@ -1,0 +1,100 @@
+Amex.first.proto_perks.last <=> Amex.first.proto_perks.first
+a = Amex.first.proto_perks.first
+b = Amex.first.proto_perks.last
+ include Comparable
+a <=> b
+a.hash <=> b.hash
+a.hash
+b.hash
+a.eql?(b)
+a == b
+class ProtoPerk < ActiveRecord::Base
+def <=>(oth)
+self.hash <=> oth.hash
+class Scraper < ActiveRecord::Base
+  def map_scrape_events(proto_perks) #REFACTOR: into a ProtoPerkList helper class, or into ProtoList
+    proto_perks.group_by(&:scrape_event_id).sort.map{|se_id, pps| yield se_id, pps}
+  end
+reload!
+Amex.first.update_deals!
+Delayed::Worker.new.run
+k = Delayed::Worker.new
+k.work_off
+_
+n
+add_column:stores, :numrewards, :integer
+class Delegacize < ActiveRecord::Migration
+add_column :stores, :program_id, :integer
+rename_column :nobids, :scraper_id, :program_id
+rename_column :ignoredeals, :scraper_id, :program_id
+rename_column:ads, :store_id, :storeid
+rename_column:ads, :deal_id, :couponid
+rename_column:ads, :scraper_id, :site
+rename_column:kwads, :deal_id, :coupon_id
+rename_column:deal_restrictions, :deal_id, :offer_id
+ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(255,3)')
+require 'db/migrate/3_delegacize'
+remove_column:ignorestores, :program_id
+Ignorestore.reset_column_information
+Ignorestore.new
+class ActiveRecord::Migration
+rename_column:ads, :storeid, :store_id
+rename_column:ads, :couponid, :deal_id
+rename_column:ads, :site, :scraper_id
+rename_column:kwads, :coupon_id, :deal_id
+rename_column:deal_restrictions, :offer_id, :deal_id
+remove_column:stores, :numrewards
+remove_column:stores, :maxcashback
+remove_column:stores, :maxcashback_strip
+remove_column:stores, :maxembed
+remove_column:stores, :maxcode
+    ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(9,3)') 
+drop_table:ignoretbds
+Delegacize.remove_column(:stores,:image_url)
+Delegacize.up; Delegacize.down
+Delegacize.down
+Delegacize.up
+ActiveRecord::Migration.remove_column   :ignorestores, :program_id
+ActiveRecord::Base.tables
+ActiveRecord::Base.methods - Object.new.methods
+(ActiveRecord::Base.methods - Object.new.methods).sort
+ActiveRecord::Base.table_exists?("schema_migrations")
+ActiveRecord::Base.connection
+ActiveRecord::Base.connection.quoted_table_names
+ActiveRecord::Base.connection.reconnect!
+ActiveRecord::Base.connection.table_names
+ActiveRecord::Base.connection.execute("show table info"
+)
+ActiveRecord::Base.connection.execute("show tables")
+require 'pp'; pp ActiveRecord::Base.connection.execute("show tables")
+ ActiveRecord::Base.connection.execute("show tables").each do |i| puts i end
+ ActiveRecord::Base.connection.execute("show tables").to_a
+ ActiveRecord::Base.connection.execute("show tables").to_ary
+ ActiveRecord::Base.connection.execute("show tables").map(&:to_s)
+ ActiveRecord::Base.connection.execute("show tables").each(&:to_s)
+ config = ActiveRecord::Base.configurations[RAILS_ENV]  
+      ActiveRecord::Base.establish_connection config.merge('database' => 'rbs_harrison3')
+ActiveRecord::Migration.table_exists?(:schema_migrations)
+      ActiveRecord::Base.establish_connection config.merge('database' => 'rbs_harrison2') ; ActiveRecord::Migration.table_exists?(:schema_migrations)
+  Scraper.all.each(&:store_proto_perks_to_xml)
+open("ruby-1.9.2-methods.rb",'w'){|f| f << "ONENINETWO_METHODS=#{:hello.methods.sort.inspect}"}
+require './ruby-1.9.2-methods'
+require './macruby-methods'
+MAC_RUBY_METHODS - ONENINETWO_METHODS
+:hello.methods.count
+"hello".methods.count
+ONENINETWO_METHODS - MAC_RUBY_METHODS
+1
+1 + super
+ include B
+include B
+module B
+def b
+2
+A.new.b
+class A
+def a
+  super + 1
+end
+A.new.a
+exit

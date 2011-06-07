@@ -1,0 +1,23 @@
+[github]
+	user = tsnow
+	token = 206dc745bafe8aa988fefce13f4d789e
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[user]
+	name = Tim Snowhite
+	email = tim@snowhitesolutions.com
+[merge]
+	keepBackup = false;
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge -dw "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[diff]
+	#external = "p4diff -dw"
+[alias]
+	diffall = !sh ~/git-diffall.sh

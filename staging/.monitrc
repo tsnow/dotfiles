@@ -1,0 +1,43 @@
+include /etc/monit.d/*
+
+# /etc/monit.d/localhost
+set daemon 20
+set logfile syslog facility log_daemon
+
+#set mailserver smtp.gmail.com port 587
+#        username "sender@address.com" password "password"
+#        using tlsv1
+#        with timeout 30 seconds
+
+#set alert recipient@address.com
+
+set httpd port 2812 and
+        use address localhost
+        allow localhost
+        allow 192.168.0.0/255.255.255.0
+        allow admin:monit
+
+check system localhost
+        if loadavg (1min) > 4 then alert
+        if loadavg (5min) > 2 then alert
+        if memory usage > 75% then alert
+        if cpu usage (user) > 70% then alert
+        if cpu usage (system) > 30% then alert
+        if cpu usage (wait) > 20% then alert
+
+
+check process apache2 with pidfile /var/run/apache2.pid
+        group www
+        start program = "/etc/init.d/apache2 start"
+        stop program  = "/etc/init.d/apache2 stop"
+        if children > 250 then restart
+        if loadavg(5min) greater than 10 for 8 cycles then stop
+        if 3 restarts within 5 cycles then timeout
+#        
+#check process jobworker with pidfile /Users/tsnow/Desktop/current/thesave/tmp/pids/delayed_job.pid
+#       group root
+#       start program = "/bin/bash --login -c /Users/tsnow/Desktop/current/thesave/script/delayed_job start" as uid tsnow and gid tsnow
+#       stop program = "/bin/bash --login -c /Users/tsnow/Desktop/current/thesave/script/delayed_job stop" as uid tsnow and gid tsnow
+#       if children > 3 then restart
+#       if loadavg(5min) greater than 100 for 8 cycles then stop
+#       if 3 restarts within 5 cycles then timeout

@@ -1,0 +1,500 @@
+puts val
+puts val.inspect
+val
+end
+ProtoPerk.proc_bucket(h,nil,true)
+mock.proxy(Store).matching_stores(anything,anything,anything) do |val| puts val.inspect; val end
+ProtoPerk.proc_bucket(h,nil,true)
+mock.proxy(Store).matching_stores(anything,anything) do |val| puts val.inspect; val end
+ProtoPerk.proc_bucket(h,nil,true)
+def watch(klass, method, arg_num=1)
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+mock.proxy(klass).send(method, *([anything,anything,anything][0..arg_num])) do |val| puts val.inspect; val end.times(any_times)
+end
+watch(Store,:matching_stores, 4)
+watch(Store,:matching_stores, 3)
+ProtoPerk.proc_bucket(h,nil,true)
+exit
+require 'test_store_matching_stores'
+"per"=>0.0, "min"=>0.0, "locations"=>[], "reduced_shipping"=>false, "percent_off"=>0.0, "orx"=>false, "instore"=>false, "reward_var"=>0.0},
+ProtoPerk.proc_bucket(h))
+h = {"conditions"=>[], "new_title"=>"Earn triple miles and double upgrade", "benefits"=>["triple miles", "double upgrade"]}
+assert_equal(
+{"restrictions"=>[], "upto"=>false, "reward_multi"=>3.0, "dollar_off"=>0.0, "title"=>"Earn triple miles and double upgrade",
+"unrestricted"=>true, "all_items"=>true, "applies_to"=>[], "free_gift"=>false, "reward_fixed"=>0.0, "free_shipping"=>false, "tbds"=>[],
+"per"=>0.0, "min"=>0.0, "locations"=>[], "reduced_shipping"=>false, "percent_off"=>0.0, "orx"=>false, "instore"=>false, "reward_var"=>0.0},
+ProtoPerk.proc_bucket(h))
+)
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+assert_equal(
+{"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>5.0, "code"=>"AFFBIG5", "store_name"=>nil, "title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "unrestricted"=>true, "all_items"=>false, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>false, "instore"=>false, "store_id"=>nil, "tbds"=>["auto parts warehouse", "air filters"], "per"=>0.0, "min"=>99.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "orx"=>false, "percent_off"=>0.0},
+ProtoPerk.proc_bucket(h, nil, true))
+h = {"code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "conditions"=>["$10", "$65", "those must-haves", "yourself"], "date"=>nil, "urls"=>[], "new_title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "benefits"=>["$10"]}
+assert_equal(
+{"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>10.0, "code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "unrestricted"=>true, "all_items"=>true, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>false, "instore"=>false, "store_id"=>nil, "tbds"=>[], "per"=>0.0, "min"=>65.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"$10 off all over $65 purchases on www.beccacosmetics.com with TENoff", "orx"=>false, "percent_off"=>0.0},
+ProtoPerk.proc_bucket(h, nil, true))
+h = {"code"=>"EMTPFSH", "store_name"=>"gaiam", "conditions"=>["12.14 everything fits gym bag an amazing"], "date"=>nil, "urls"=>["http://bit.ly/7hjTpM"], "new_title"=>"20% off plus free standard shipping at Gaiam discount code EMTPFSH Expires 12.14 Everything Fits Gym Bag An amazing", "benefits"=>["20%", "free standard shipping"]}
+assert_equal(
+{"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>0.0, "code"=>"EMTPFSH", "store_name"=>"GAIAM", "title"=>"20% off plus free standard shipping at Gaiam discount code EMTPFSH Expires 12.14 Everything Fits Gym Bag An amazing", "unrestricted"=>true, "all_items"=>true, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>true, "instore"=>false, "store_id"=>947, "tbds"=>[], "per"=>0.0, "min"=>0.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"20% off plus free standard shipping at Gaiam discount code EMTPFSH", "orx"=>false, "percent_off"=> 20.0},
+ProtoPerk.proc_bucket(h, nil, true))
+h = {"code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "conditions"=>["$10", "$65", "those must-haves", "yourself"], "date"=>nil, "urls"=>[], "new_title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "benefits"=>["$10"]}
+assert_equal(
+{"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>10.0, "code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "unrestricted"=>true, "all_items"=>true, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>false, "instore"=>false, "store_id"=>nil, "tbds"=>[], "per"=>0.0, "min"=>65.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"$10 off all over $65 purchases on www.beccacosmetics.com with TENoff", "orx"=>false, "percent_off"=>0.0},
+ProtoPerk.proc_bucket(h, nil, true))
+exit
+require 'test_store_matching_stores'
+h = {"code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "conditions"=>["$10", "$65", "those must-haves", "yourself"], "date"=>nil, "urls"=>[], "new_title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "benefits"=>["$10"]}
+n
+h = {"code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "conditions"=>["$10", "$65", "those must-haves", "yourself"], "date"=>nil, "urls"=>[], "new_title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "benefits"=>["$10"]}
+assert_equal(
+{"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>10.0, "code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "unrestricted"=>true, "all_items"=>true, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>false, "instore"=>false, "store_id"=>nil, "tbds"=>[], "per"=>0.0, "min"=>65.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"$10 off all over $65 purchases on www.beccacosmetics.com with TENoff", "orx"=>false, "percent_off"=>0.0},
+ProtoPerk.proc_bucket(h, nil, true))
+h = {"code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "conditions"=>["$10", "$65", "those must-haves", "yourself"], "date"=>nil, "urls"=>[], "new_title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "benefits"=>["$10"]}; assert_equal({"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>10.0, "code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "unrestricted"=>true, "all_items"=>true, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>false, "instore"=>false, "store_id"=>nil, "tbds"=>[], "per"=>0.0, "min"=>65.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"$10 off all over $65 purchases on www.beccacosmetics.com with TENoff", "orx"=>false, "percent_off"=>0.0},ProtoPerk.proc_bucket(h, nil, true))
+h = {"code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "conditions"=>["$10", "$65", "those must-haves", "yourself"], "date"=>nil, "urls"=>[], "new_title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "benefits"=>["$10"]}; assert_equal({"restrictions"=>[], "upto"=>false, "reward_var"=>0.0, "dollar_off"=>10.0, "code"=>"TENoff", "store_name"=>"www.beccacosmetics.com", "title"=>"SAVE - $10 off all over $65 purchases on www.beccacosmetics.com with TENoff code. Get those must-haves for yourself or others.", "unrestricted"=>true, "all_items"=>true, "reward_multi"=>0.0, "date"=>nil, "applies_to"=>[], "free_gift"=>false, "url"=>[], "free_shipping"=>false, "instore"=>false, "store_id"=>nil, "tbds"=>[], "per"=>0.0, "min"=>65.0, "locations"=>[], "reduced_shipping"=>false, "reward_fixed"=>0.0, "crop_title"=>"$10 off all over $65 purchases on www.beccacosmetics.com with TENoff", "orx"=>false, "percent_off"=>0.0},ProtoPerk.proc_bucket(h, nil, true))
+ProtoPerk.proc_bucket(h,nil,true)
+require 'test_store_matching_stores'
+ProtoPerk.proc_bucket(h,nil,true)
+exit
+require 'test_store_matching_stores
+[^H
+"
+;
+;
+'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+watches = []
+watches.push watch(Store, :matching_stores, 3)
+watches.push watch(Store, 'find', 3)
+watches.push watch(Store, :define_read_method, 4)
+watches.push watch(Store, :compute_type, 2)
+watches.push watch(Store, :matching_stores, 3)
+load 'test_store_matching_stores.rb'
+exit
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+Call.ist
+Call.list
+Call.push("a","b","C", "D")
+Call.list
+Call.reset
+require 'test_store_matching_stores'
+unload(Call)
+undef(Call)
+Kernel.const_set(:Call, nil)
+load 'test_store_matching_stores.rb'
+load 'test_store_matching_stores.rb'
+load 'test_store_matching_stores.rb'
+Kernel.const_set(Call, nil)
+Kernel.const_set(:Call, nil)
+load 'test_store_matching_stores.rb'
+remove_const(Call)
+remove_const(:Call)
+Object.remove_const(Call)
+Object.remove_const(:Call)
+Object.send(:remove_const,:Call)
+load 'test_store_matching_stores.rb'
+self.class.send(:remove_const, :Call)
+Call
+instance_eval { remove_const :Call }
+self.class.instance_eval { remove_const :Call }
+Call = Class.new
+self.class.instance_eval { remove_const :Call }
+load 'test_store_matching_stores.rb'
+Call = Class.new
+load 'test_store_matching_stores.rb'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+Store.methods
+Store.matching_stores("abudabi")
+Call.list
+Store.find(1)
+Call.list
+Args.list
+Args.pop
+Args.pop_all
+Store.matching_stores("abudabi")
+Args.pop_all
+Call.list
+ObjectSpace
+ObjectSpace.each_object do |obj| 
+puts obj.inspect
+end
+exit
+#watches.push watch(Store, :matching_stores, 3)
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+RR::Space.instance.recorded_calls
+RR::DoubleMatches
+RR::Space.instance.ordered_doubles
+RR::Space.instance.verify_doubles
+exit
+require 'test_store_matching_stores'
+Space::Reader.double_injection
+RR::Space::Reader.double_injection
+include RR::Space::Reader
+double_injection
+RR::Injections::DoubleInjection.find_by_subject(Store)
+RR::Injections::DoubleInjection.find_by_subject(Store, :matching_stores)
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+Store.matching_stores
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+self.class.remove_const(:Store)
+class << self; remove_const(:Store); end
+Kernel::Store
+Kernel.send(:remove_const,:Store)
+Store
+constants
+self.class.constants
+self.class.constants.find{|x| x=~/Store/}
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'test_store_matching_stores'
+exit
+require 'proc_bucket_generator'
+require 'proc_bucket_generator'
+Call.list
+Call.list
+Store.matching_stores
+Call.list
+require 'watch'
+watch
+exit
+require 'proc_bucket_generator'
+require 'proc_bucket_generator'
+exit
+require 'watch'
+watch(Store, :matching_stores, 3)
+watch(Net::HTTP, :post_form, 3)
+watch(ProtoPerk, :geo_extract)
+#watch(Restriction, :find)
+watch(Deal, :direct_link)
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+n
+ProtoPerk.proc_bucket(h, nil, true)
+puts Call.list
+puts (Store.methods - ActiveRecord::Base.methods).sort.inspect
+load 'watch.rb'
+exit
+require 'watch'
+watch(Store, :matching_stores, 3)
+watch(Net::HTTP, :post_form, 3)
+watch(ProtoPerk, :geo_extract)
+#watch(Restriction, :find)
+watch(Deal, :direct_link)
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+ProtoPerk.proc_bucket(h, nil, true)
+Call.list
+exit
+require 'watch'
+watch(Store, :matching_stores, 3)
+watch(Net::HTTP, :post_form, 3)
+watch(ProtoPerk, :geo_extract)
+#watch(Restriction, :find)
+watch(Deal, :direct_link)
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+ProtoPerk.proc_bucket(h, nil, true)
+Call.list
+exit
+require 'watch'
+watch(Store, :matching_stores, 3)
+watch(Net::HTTP, :post_form, 3)
+watch(ProtoPerk, :geo_extract)
+#watch(Restriction, :find)
+watch(Deal, :direct_link)
+h = {"code"=>"AFFBIG5", "store_name"=>nil, "conditions"=>["auto parts warehouse", "$5", "air filters", "$99"], "date"=>nil, "urls"=>["http://cli.gs/m387T"], "new_title"=>"Auto Parts Warehouse $5 off select brands of Air Filters orders of $99 code AFFBIG5", "benefits"=>["$5"]}
+ProtoPerk.proc_bucket(h, nil, true)
+Call.list
+puts Call.list
+exit
+Amex.last.proto_perks.length
+Amex.first.proto_perks.length
+AmexMr.first.proto_perks.length
+Amex.first.proto_perks.length
+Amex.first.proto_perks.scoped(:group => 'scrape_event_id').map{|x,y| [x.scrape_event_id, y.count]}
+Amex.first.proto_perks.scoped(:group => 'scrape_event_id').map{|x,y| [x.scrape_event_id, y.length]}
+Amex.first.proto_perks.all(:group => 'scrape_event_id').map{|x,y| [x.scrape_event_id, y.length]}
+Amex.first.proto_perks.all(:group => 'scrape_event_id').map{|x,y| [x, y.length]}
+Amex.first.proto_perks.count(:group => 'scrape_event_id',:select => 'scrape_event_id, count(*)')
+Amex.first.proto_perks.count(:group => 'scrape_event_id')
+Amex.first.proto_perks.process([:unrun])
+Amex.first.proto_perks.process(:unrun)
+Amex.first.update_deals!
+Amex.first.proto_perks.sort
+Amex.first.proto_perks.sort; ''
+Amex.first.proto_perks.last
+Amex.first.proto_perks.last <=> Amex.first.proto_perks.first
+a = Amex.first.proto_perks.first
+b = Amex.first.proto_perks.last
+a <=> b
+class ProtoPerk < ActiveRecord::Base
+ include Comparable
+end
+a <=> b
+a.hash <=> b.hash
+a.hash
+b.hash
+a.eql?(b)
+a == b
+class ProtoPerk < ActiveRecord::Base
+def <=>(oth)
+self.hash <=> oth.hash
+end
+end
+Amex.first.update_deals!
+class Scraper < ActiveRecord::Base
+  def map_scrape_events(proto_perks) #REFACTOR: into a ProtoPerkList helper class, or into ProtoList
+    proto_perks.group_by(&:scrape_event_id).sort.map{|se_id, pps| yield se_id, pps}
+  end
+end
+reload!
+Amex.first.update_deals!
+reload!
+Amex.first.update_deals!
+reload!
+Amex.first.update_deals!
+reload!
+Amex.first.update_deals!
+Amex.first.update_deals!
+reload!
+Amex.first.update_deals!
+Delayed::Worker.new.run
+k = Delayed::Worker.new
+k.work_off
+_
+exit
+Delegacize.down
+require 'db/migrate/3_delegacize'
+Delegacize.down
+class Delegacize < ActiveRecord::Migration
+n
+add_column:stores, :numrewards, :integer
+rename_column :nobids, :scraper_id, :program_id
+rename_column :ignoredeals, :scraper_id, :program_id
+rename_column:ads, :store_id, :storeid
+rename_column:ads, :deal_id, :couponid
+rename_column:ads, :scraper_id, :site
+rename_column:kwads, :deal_id, :coupon_id
+rename_column:deal_restrictions, :deal_id, :offer_id
+ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(255,3)')
+end
+class Delegacize < ActiveRecord::Migration
+add_column:stores, :numrewards, :integer
+add_column :stores, :program_id, :integer
+rename_column :nobids, :scraper_id, :program_id
+rename_column :ignoredeals, :scraper_id, :program_id
+rename_column:ads, :store_id, :storeid
+rename_column:ads, :deal_id, :couponid
+rename_column:ads, :scraper_id, :site
+rename_column:kwads, :deal_id, :coupon_id
+rename_column:deal_restrictions, :deal_id, :offer_id
+ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(255,3)')
+end
+add_column :stores, :program_id, :integer
+rename_column :nobids, :scraper_id, :program_id
+rename_column :ignoredeals, :scraper_id, :program_id
+rename_column:ads, :store_id, :storeid
+rename_column:ads, :deal_id, :couponid
+rename_column:ads, :scraper_id, :site
+rename_column:kwads, :deal_id, :coupon_id
+rename_column:deal_restrictions, :deal_id, :offer_id
+ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(255,3)')
+class Delegacize < ActiveRecord::Migration
+add_column :stores, :program_id, :integer
+rename_column :nobids, :scraper_id, :program_id
+rename_column :ignoredeals, :scraper_id, :program_id
+rename_column:ads, :store_id, :storeid
+rename_column:ads, :deal_id, :couponid
+rename_column:ads, :scraper_id, :site
+rename_column:kwads, :deal_id, :coupon_id
+rename_column:deal_restrictions, :deal_id, :offer_id
+ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(255,3)')
+end
+exit
+require 'db/migrate/3_delegacize'
+class ActiveRecord::Migration
+remove_column:ignorestores, :program_id
+remove_column:ignorestores, :program_id
+rename_column:ads, :storeid, :store_id
+rename_column:ads, :couponid, :deal_id
+rename_column:ads, :site, :scraper_id
+rename_column:kwads, :coupon_id, :deal_id
+rename_column:deal_restrictions, :offer_id, :deal_id
+remove_column:stores, :numrewards
+remove_column:stores, :maxcashback
+remove_column:stores, :maxcashback_strip
+remove_column:stores, :maxembed
+remove_column:stores, :maxcode
+    ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(9,3)') 
+drop_table:ignoretbds
+end
+Ignorestore.reset_column_information
+Ignorestore.new
+class ActiveRecord::Migration
+rename_column:ads, :storeid, :store_id
+rename_column:ads, :couponid, :deal_id
+rename_column:ads, :site, :scraper_id
+rename_column:kwads, :coupon_id, :deal_id
+rename_column:deal_restrictions, :offer_id, :deal_id
+remove_column:stores, :numrewards
+remove_column:stores, :maxcashback
+remove_column:stores, :maxcashback_strip
+remove_column:stores, :maxembed
+remove_column:stores, :maxcode
+    ActiveRecord::Base.connection.execute('Alter table relatedstores modify maxoverall float(9,3)') 
+drop_table:ignoretbds
+end
+Delegacize.down
+Delegacize.up; Delegacize.down
+Delegacize.remove_column(:stores,:image_url)
+Delegacize.up; Delegacize.down
+Delegacize.down
+Delegacize.up
+exit
+ActiveRecord::Migration.remove_column   :ignorestores, :program_id
+exit
+ActiveRecord::Base.tables
+ActiveRecord::Base.methods - Object.new.methods
+(ActiveRecord::Base.methods - Object.new.methods).sort
+ActiveRecord::Base.table_exists?("schema_migrations")
+ActiveRecord::Base.connection
+ActiveRecord::Base.connection.quoted_table_names
+ActiveRecord::Base.connection.table_names
+ActiveRecord::Base.connection.reconnect!
+ActiveRecord::Base.connection.table_names
+ActiveRecord::Base.connection.execute("show table info"
+)
+ActiveRecord::Base.connection.execute("show tables")
+require 'pp'; pp ActiveRecord::Base.connection.execute("show tables")
+ ActiveRecord::Base.connection.execute("show tables").each do |i| puts i end
+ ActiveRecord::Base.connection.execute("show tables").to_a
+ ActiveRecord::Base.connection.execute("show tables").to_ary
+ ActiveRecord::Base.connection.execute("show tables").map(&:to_s)
+ ActiveRecord::Base.connection.execute("show tables").each(&:to_s)
+exit
+ActiveRecord::Migration.table_exists?(:schema_migrations)
+exit
+      ActiveRecord::Base.establish_connection config.merge('database' => 'rbs_harrison3')
+ config = ActiveRecord::Base.configurations[RAILS_ENV]  
+      ActiveRecord::Base.establish_connection config.merge('database' => 'rbs_harrison3')
+ActiveRecord::Migration.table_exists?(:schema_migrations)
+      ActiveRecord::Base.establish_connection config.merge('database' => 'rbs_harrison2') ; ActiveRecord::Migration.table_exists?(:schema_migrations)
+      ActiveRecord::Base.establish_connection config.merge('database' => 'rbs_harrison2') ; ActiveRecord::Migration.table_exists?(:schema_migrations)
+exit
+  Scraper.all.each(&:store_proto_perks_to_xml)
+exit
+"hello".methods.count
+:hello.methods.count
+exit
+open("ruby-1.9.2-methods.rb",'w'){|f| f << "ONENINETWO_METHODS=#{:hello.methods.sort.inspect}"}
+require './ruby-1.9.2-methods'
+require './macruby-methods'
+MAC_RUBY_METHODS - ONENINETWO_METHODS
+:hello.methods.count
+"hello".methods.count
+ONENINETWO_METHODS - MAC_RUBY_METHODS
+exit
+class A
+def a
+1
+end
+end
+module B
+def a
+1 + super
+end
+end
+class A
+ include B
+end
+A.new.a
+module B
+def a
+2
+end
+end
+class A
+include B
+end
+A.new.a
+module B
+def b
+2
+end
+end
+A.new.b
+A.new.a
+class A
+def a
+  super + 1
+end
+end
+A.new.a
+class A
+def a
+  super + 1
+end
+end
+A.new.a
+exit
+require 'rake'
+require 'rails/tasks'
+exi
+exit
