@@ -2,3 +2,4 @@
 .DS_Store
 bash/private.sh
 private
+emacs-tsnow/.emacs.d

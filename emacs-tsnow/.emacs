@@ -125,27 +125,25 @@
 
 
 ;;;auctex
-
-(add-to-list 'load-path "/Applications/Emacs.app/Contents/Resources/site-lisp")
-
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+;;(add-to-list 'load-path "/Applications/Emacs.app/Contents/Resources/site-lisp")
+;;(load "auctex.el" nil t t)
+;;(load "preview-latex.el" nil t t)
 
 
 ;;anything.el
-(add-to-list 'load-path "/Users/tsnow/.emacs.d/anything-config")
-(require 'anything-startup)
+;;(add-to-list 'load-path "/Users/tsnow/.emacs.d/anything-config")
+;;(require 'anything-startup)
 
 ;;rcodetools
 (add-to-list 'load-path "/Users/tsnow/.emacs.d")
 (require 'rcodetools)
 
 ;;peepopen
-(add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
-(require 'textmate)
-(textmate-mode)
-(add-to-list 'load-path "~/.emacs.d/vendor/")
-(require 'peepopen)
+;;(add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
+;;(require 'textmate)
+;;(textmate-mode)
+;;(add-to-list 'load-path "~/.emacs.d/vendor/")
+;;(require 'peepopen)
 
 ;;ruby-test-mode
 (add-to-list 'load-path "~/.emacs.d/ruby-test.el")
@@ -252,13 +250,13 @@ Example:
 (setq inhibit-startup-message t)
 
 (delete-selection-mode t)
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
+;; (scroll-bar-mode -1)
+;; (tool-bar-mode -1)
 (blink-cursor-mode t)
 (show-paren-mode t)
 (column-number-mode t)
-(set-fringe-style -1)
-(tooltip-mode -1)
+;; (set-fringe-style -1)
+;; (tooltip-mode -1)
 (set-frame-font "Menlo-11")
 ;;(load-theme 'tango)
 
