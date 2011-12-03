@@ -13,3 +13,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/tmcw/.vim
+[submodule "emacs-tsnow/.emacs.d/vendor/textmate.el"]
+	path = emacs-tsnow/.emacs.d/vendor/textmate.el
+	url = git://github.com/defunkt/textmate.el.git
