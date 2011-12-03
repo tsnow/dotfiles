@@ -1,0 +1,59 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git@github.com:tsnow/dotfiles.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "emacs"]
+	url = https://github.com/technomancy/emacs-starter-kit.git
+[remote "jpalardy"]
+	url = https://github.com/jpalardy/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/jpalardy/*
+[remote "cypher"]
+	url = git://github.com/cypher/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/cypher/*
+[remote "drnic"]
+	url = https://github.com/drnic/.dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/drnic/*
+[remote "norm"]
+	url = https://github.com/norm/home
+	fetch = +refs/heads/*:refs/remotes/norm/*
+[remote "jjb"]
+	url = https://github.com/jjb/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/jjb/*
+[remote "grosser"]
+	url = https://github.com/grosser/dotfiles
+	fetch = +refs/heads/*:refs/remotes/grosser/*
+[remote "cldwalker"]
+	url = https://github.com/cldwalker/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/cldwalker/*
+[remote "amiel"]
+	url = https://github.com/amiel/dotfiles
+	fetch = +refs/heads/*:refs/remotes/amiel/*
+[remote "isaacs"]
+	url = https://github.com/isaacs/dotfiles
+	fetch = +refs/heads/*:refs/remotes/isaacs/*
+[remote "mitchellh"]
+	url = https://github.com/mitchellh/dotfiles
+	fetch = +refs/heads/*:refs/remotes/mitchellh/*
+[remote "technomancy"]
+	url = https://github.com/technomancy/dotfiles
+	fetch = +refs/heads/*:refs/remotes/technomancy/*
+[remote "gammons"]
+	url = https://github.com/gammons/dotfiles
+	fetch = +refs/heads/*:refs/remotes/gammons/*
+[remote "Monty"]
+	url = https://github.com/Monty/dotfiles
+	fetch = +refs/heads/*:refs/remotes/Monty/*
+[remote "mnutt"]
+	url = http://github.com/mnutt/dotfiles
+	fetch = +refs/heads/*:refs/remotes/mnutt/*
+[remote "floehopper"]
+	url = https://github.com/floehopper/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/floehopper/*

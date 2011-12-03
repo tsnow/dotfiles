@@ -18,5 +18,11 @@
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
 
+(add-to-list 'load-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/lib/tools-2.6.6.5/emacs")
+(setq erlang-root-dir "/usr/local/Cellar/erlang/R14B04/lib/erlang")
+(add-to-list 'exec-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/bin")
+(require 'erlang-start)
+
+
 (setenv "PAGER" "/bin/cat")
 (server-start)

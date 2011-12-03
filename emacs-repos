@@ -1,0 +1,54 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = https://github.com/technomancy/emacs-starter-kit.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "drogus"]
+	url = https://github.com/drogus/emacs-starter-kit
+	fetch = +refs/heads/*:refs/remotes/drogus/*
+[remote "jimweirich"]
+	url = https://github.com/jimweirich/emacs-setup
+	fetch = +refs/heads/*:refs/remotes/jimweirich/*
+[remote "mnutt"]
+	url = http://github.com/mnutt/emacs-starter-kit
+	fetch = +refs/heads/*:refs/remotes/mnutt/*
+[remote "timwee"]
+	url = https://github.com/timwee/emacs-starter-kit-mr-flip-forked.git
+	fetch = +refs/heads/*:refs/remotes/timwee/*
+[remote "febling"]
+	url = https://github.com/febeling/emacsd
+	fetch = +refs/heads/*:refs/remotes/febling/*
+[remote "j2labs"]
+	url = https://github.com/j2labs/emacs-env
+	fetch = +refs/heads/*:refs/remotes/j2labs/*
+[remote "jasongilman"]
+	url = https://github.com/jasongilman/e84dan-emacs
+	fetch = +refs/heads/*:refs/remotes/jasongilman/*
+[remote "marktriggs"]
+	url = ../../reference/marktriggs-elisp/dishevelled.net/elisp
+	fetch = +refs/heads/*:refs/remotes/marktriggs/*
+[remote "stevej"]
+	url = https://github.com/stevej/emacs
+	fetch = +refs/heads/*:refs/remotes/stevej/*
+[remote "defunkt"]
+	url = https://github.com/defunkt/emacs.git
+	fetch = +refs/heads/*:refs/remotes/defunkt/*
+[remote "rmm5t"]
+	url = https://github.com/rmm5t/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/rmm5t/*
+[remote "nakkaya"]
+	url = https://github.com/nakkaya/emacs
+	fetch = +refs/heads/*:refs/remotes/nakkaya/*
+[remote "stuartsierra"]
+	url = https://github.com/stuartsierra/dotfiles
+	fetch = +refs/heads/*:refs/remotes/stuartsierra/*
+[remote "yrashk"]
+	url = https://github.com/yrashk/emacsd.git
+	fetch = +refs/heads/*:refs/remotes/yrashk/*
