@@ -1,15 +1,20 @@
 source /etc/profile
 
-export DOTFILES=~/my/dotfiles
+export DOTFILES=~/my-dotfiles
+export DEV_DOTFILES=~/dev-dotfiles
+if [ -s "$DEV_DOTFILES/bash/main.sh" ]
+  then source "$DEV_DOTFILES/bash/main.sh"
+fi
 
 source "$DOTFILES/bash/aliases.sh"
 source "$DOTFILES/bash/git.sh"
+source "$DOTFILES/bash/prompt.sh"
 
 if [ -s "$DOTFILES/bash/private.sh" ]
   then source "$DOTFILES/bash/private.sh"
 fi
 
-export EDITOR=/usr/local/bin/emacs
+export EDITOR=emacs
 export VISUAL=$EDITOR
 
 export ARCHFLAGS="-arch x86_64"

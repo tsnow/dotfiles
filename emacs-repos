@@ -52,3 +52,12 @@
 [remote "yrashk"]
 	url = https://github.com/yrashk/emacsd.git
 	fetch = +refs/heads/*:refs/remotes/yrashk/*
+[remote "dgutov"]
+	url = https://github.com/dgutov/dot-emacs.git
+	fetch = +refs/heads/*:refs/remotes/dgutov/*
+[remote "jlouis"]
+	url = https://github.com/jlouis/jlouis-emacs-conf.git
+	fetch = +refs/heads/*:refs/remotes/jlouis/*
+[remote "olabini"]
+	url = https://github.com/olabini/emacs.d.git
+	fetch = +refs/heads/*:refs/remotes/olabini/*
