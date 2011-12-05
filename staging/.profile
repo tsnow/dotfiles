@@ -75,25 +75,3 @@ export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
 
 #END MAPNIK
 
-
-#PROMPT 
-. /Users/tsnow/git-prompt/git-prompt.sh
-# Bash snippet to open new shells in most recently visited dir.
-# Useful if you want to open a new terminal tab at the present 
-# tab's location.
-#
-# Put this in your .bashrc or whatever. 
-pathed_cd () {
-    if [ "$1" == "" ]; then
-        cd
-    else
-        cd "$1"
-    fi
-#	echo "Going to $1 from "`cat ~/.cdpath`
-    pwd > ~/.cdpath
-}
-alias cd="pathed_cd"
- 
-if [ -f ~/.cdpath ]; then
-  cd $(cat ~/.cdpath)
-fi
