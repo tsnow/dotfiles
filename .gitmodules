@@ -1,3 +1,6 @@
 [submodule "emacs"]
 	path = emacs
 	url = https://github.com/technomancy/emacs-starter-kit.git
+[submodule "emacs-tsnow/tsnow/Tomorrow-Theme"]
+	path = emacs-tsnow/tsnow/Tomorrow-Theme
+	url = ./emacs-tsnow/tsnow/Tomorrow-Theme
