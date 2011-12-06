@@ -1,10 +1,13 @@
+(add-to-list 'load-path (concat user-specific-dir "/../el-get/el-get/"))
 ;;;; BEGIN el-get ;;http://www.emacswiki.org/emacs/el-get
+(require 'el-get)
 (unless (require 'el-get nil t)
   (url-retrieve
    "https://github.com/dimitri/el-get/raw/master/el-get-install.el"
    (lambda (s)
      (end-of-buffer)
      (eval-print-last-sexp))))
+
 
 
 (setq
@@ -53,17 +56,17 @@
   (add-to-list 'el-get-sources 'emacs-goodies-el)) ; the debian addons for emacs
 
 (when (el-get-executable-find "svn")
-  (loop for p in '(psvn    		; M-x svn-status
+  (loop for p in '(dsvn    		; M-x svn-status
 		   yasnippet		; powerful snippet mode
 		   )
 	do (add-to-list 'el-get-sources p)))
+
+
 
 ;; install new packages and init already installed packages
 (el-get) ;;;(el-get 'sync)
 
 ;;;; END el-get
-
-
 
 (put 'erase-buffer 'disabled nil)
 
@@ -78,7 +81,7 @@
             (local-set-key (kbd "C-x C-v") 'rinari-rgrep)))
 
 ;;From old .emacs
-(defun maximize-frame () 
+(defun maximize-frame ()
   (interactive)
   (set-frame-position (selected-frame) 0 0)
   (set-frame-size (selected-frame) 1000 1000))
@@ -120,7 +123,7 @@
       ["black" "red4" "green4" "yellow4"
        "blue3" "magenta4" "cyan4" "white"])
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
-(add-hook 'shell-mode-hook 
+(add-hook 'shell-mode-hook
      '(lambda () (toggle-truncate-lines 1)))
 (setq comint-prompt-read-only t)
 
@@ -186,7 +189,7 @@
 
 
              ;;/FROM OLD .emacs
-             
+
 
 
 
@@ -201,11 +204,12 @@
 
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
-
-(add-to-list 'load-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/lib/tools-2.6.6.5/emacs")
-(setq erlang-root-dir "/usr/local/Cellar/erlang/R14B04/lib/erlang")
-(add-to-list 'exec-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/bin")
-(require 'erlang-start)
+(when (executable-find "erl")
+  (progn
+   (add-to-list 'load-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/lib/tools-2.6.6.5/emacs")
+   (setq erlang-root-dir "/usr/local/Cellar/erlang/R14B04/lib/erlang")
+   (add-to-list 'exec-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/bin")
+   (require 'erlang-start)))
 
 
 (setenv "PAGER" "/bin/cat")
