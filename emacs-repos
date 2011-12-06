@@ -61,3 +61,6 @@
 [remote "olabini"]
 	url = https://github.com/olabini/emacs.d.git
 	fetch = +refs/heads/*:refs/remotes/olabini/*
+[remote "jennifersmith"]
+	url = https://github.com/jennifersmith/misc.git
+	fetch = +refs/heads/*:refs/remotes/jennifersmith/*

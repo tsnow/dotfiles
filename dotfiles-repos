@@ -57,3 +57,21 @@
 [remote "floehopper"]
 	url = https://github.com/floehopper/dotfiles.git
 	fetch = +refs/heads/*:refs/remotes/floehopper/*
+[remote "jbarnette"]
+	url = https://github.com/jbarnette/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/jbarnette/*
+[submodule "emacs-tsnow/.emacs.d/vendor/textmate.el"]
+	url = git://github.com/defunkt/textmate.el.git
+[submodule "emacs-tsnow/tsnow/Tomorrow-Theme"]
+	url = git@github.com:tsnow/dotfiles.git/emacs-tsnow/tsnow/Tomorrow-Theme
+[submodule "emacs-tsnow/tsnow/anything-config"]
+	url = git://repo.or.cz/anything-config.git
+[submodule "git-prompt"]
+	url = git://github.com/lvv/git-prompt.git
+[submodule "oh-my-zsh"]
+	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "vim"]
+	url = https://github.com/tmcw/.vim
+[remote "jennifersmith"]
+	url = https://github.com/jennifersmith/misc.git
+	fetch = +refs/heads/*:refs/remotes/jennifersmith/*
