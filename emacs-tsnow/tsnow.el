@@ -253,5 +253,7 @@
 (global-set-key (kbd "M-<right>") 'select-next-window)
 (global-set-key (kbd "M-<left>")  'select-previous-window)
 
-(setenv "PAGER" "/bin/cat")
-(server-start)
+(setenv "PAGER" "/bin/cat"))
+(require 'server)
+(or (server-running-p)
+    (server-start))
