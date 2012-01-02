@@ -55,7 +55,7 @@
 (when (el-get-executable-find "cvs")
   (add-to-list 'el-get-sources 'emacs-goodies-el)) ; the debian addons for emacs
 
-(when (el-get-executable-find "svn")
+(when (el-get-executable-find "svn.bak")
   (loop for p in '(dsvn    		; M-x svn-status
 		   yasnippet		; powerful snippet mode
 		   )
