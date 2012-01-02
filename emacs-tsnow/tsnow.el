@@ -226,20 +226,22 @@
    ;; Some Erlang customizations
    (add-hook 'erlang-mode-hook 'my-erlang-mode-hook)
 
-   (defun flymake-erlang-init ()
-     (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                        'flymake-create-temp-inplace))
-            (local-file (file-relative-name
-                         temp-file
-                         (file-name-directory buffer-file-name))))
-       (list "~/my-dotfiles/erlang/eflymake" (list local-file))))
-   (add-to-list 'flymake-allowed-file-name-masks
-                '("\\.erl\\'" flymake-erlang-init))
-   (add-hook 'find-file-hook 'flymake-find-file-hook)
-   (defun my-erlang-mode-hook ()
-        (flymake-mode 1))
-(add-hook 'erlang-mode-hook 'my-erlang-mode-hook)
-   ))
+   ;; (require 'flymake) ;; was causing all kinds of xml issues
+   ;; (defun flymake-erlang-init ()
+   ;;   (let* ((temp-file (flymake-init-create-temp-buffer-copy
+   ;;                      'flymake-create-temp-inplace))
+   ;;          (local-file (file-relative-name
+   ;;                       temp-file
+   ;;                       (file-name-directory buffer-file-name))))
+   ;;     (list "~/my-dotfiles/erlang/eflymake" (list local-file))))
+   ;; (add-to-list 'flymake-allowed-file-name-masks
+   ;;              '("\\.erl\\'" flymake-erlang-init))
+   ;; (add-hook 'find-file-hook 'flymake-find-file-hook)
+   ;; (defun my-erlang-mode-hook ()
+   ;;   (flymake-mode 1)
+   ;;   (add-hook 'erlang-mode-hook 'my-erlang-mode-hook))
+)
+
   ;; def-advice before ask-user-about-supersession-threat
   ;; to check whether the file is different than the one on disk, and if not,
   ;; then save without asking.
