@@ -240,6 +240,9 @@
         (flymake-mode 1))
 (add-hook 'erlang-mode-hook 'my-erlang-mode-hook)
    ))
+  ;; def-advice before ask-user-about-supersession-threat
+  ;; to check whether the file is different than the one on disk, and if not,
+  ;; then save without asking.
 (defun select-next-window ()
   "Switch to the next window"
   (interactive)
