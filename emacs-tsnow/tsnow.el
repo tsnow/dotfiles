@@ -176,7 +176,7 @@
 
 
 ;; http://batsov.com/articles/2011/11/25/emacs-tip-number-3-whitespace-cleanup/
-(add-hook 'before-save-hook 'whitespace-cleanup)
+;(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;;My .info files
 (add-to-list 'Info-directory-list "~/my-dotfiles/emacs-tsnow/info")
