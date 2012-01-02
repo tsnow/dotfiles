@@ -86,7 +86,8 @@
   (interactive)
   (set-frame-position (selected-frame) 0 0)
   (set-frame-size (selected-frame) 1000 1000))
-(add-hook 'window-setup-hook 'ns-toggle-fullscreen)
+(and (window-system)
+     (add-hook 'window-setup-hook 'ns-toggle-fullscreen))
 
 ;;http://random-state.net/log/3512630740.html
 (setq font-lock-verbose nil)
