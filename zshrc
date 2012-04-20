@@ -44,3 +44,5 @@ SAVEHIST=1000
 setopt appendhistory autocd extendedglob nomatch notify #correct_all
 unsetopt beep
 bindkey -e
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
