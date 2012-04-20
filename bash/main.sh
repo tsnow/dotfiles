@@ -26,6 +26,26 @@ fi
 #  os="$os/${uname%% *}";
 #  uname="${uname#* }";
 #done
+
+#if [ -s "$DOTFILES/bash/resty" ]
+#  then source "$DOTFILES/bash/resty"
+#fi
+
+## Needed for completions, from http://www.schuerig.de/michael/blog/index.php/2007/02/24/gem-bash-completion/
+have()
+{
+  unset -v have
+  PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
+  have="yes"
+}
+
+## Completions
+if [ -s "$DOTFILES/bash/completions_dir" ]
+  then for i in `find "$DOTFILES/bash/completions_dir/" -type f -name "*.sh"`; do
+        source "$i";
+        done
+fi
+
 export EDITOR="emacs -nw"
 export VISUAL=$EDITOR
 
