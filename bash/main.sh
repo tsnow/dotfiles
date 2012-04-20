@@ -14,7 +14,7 @@ if [ -s "$DOTFILES/bash/private.sh" ]
   then source "$DOTFILES/bash/private.sh"
 fi
 
-export EDITOR=emacs
+export EDITOR="emacs -nw"
 export VISUAL=$EDITOR
 
 export ARCHFLAGS="-arch x86_64"
