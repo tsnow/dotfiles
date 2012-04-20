@@ -14,6 +14,18 @@ if [ -s "$DOTFILES/bash/private.sh" ]
   then source "$DOTFILES/bash/private.sh"
 fi
 
+uname=`uname -a`;
+os="${uname%% *}";
+#uname="${uname#* }";
+if [ -s "$DOTFILES/bash/$os.sh" ]
+  then source "$DOTFILES/bash/$os.sh";
+fi
+#while [ -s "$DOTFILES/bash/$os.sh" ]
+#  then 
+#  source "$DOTFILES/bash/$os.sh";
+#  os="$os/${uname%% *}";
+#  uname="${uname#* }";
+#done
 export EDITOR="emacs -nw"
 export VISUAL=$EDITOR
 
