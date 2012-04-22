@@ -1,6 +1,7 @@
 alias e="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n"
 #alias git=hub
 alias rake="rake -qs"
+alias emacs="emacs -nw --no-init"
 
 # Bash snippet to open new shells in most recently visited dir.
 # Useful if you want to open a new terminal tab at the present 
