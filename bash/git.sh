@@ -1,5 +1,6 @@
 __git_ps1 ()
 {
+
 	local g="$(git rev-parse --git-dir 2>/dev/null)"
 	if [ -n "$g" ]; then
 		local r
