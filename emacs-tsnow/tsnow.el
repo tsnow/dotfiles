@@ -168,7 +168,7 @@
 (require 'color-theme)
 ;;(require 'color-theme-sanityinc-solarized)
 ;;(color-theme-sanityinc-solarized 'light)
-(require 'color-theme-tangotango)
+;;(require 'color-theme-tangotango)
 ;;(color-theme-tangotango)
 (add-to-list 'load-path "~/.emacs.d/Tomorrow-Theme/GNU Emacs")
 (require 'color-theme-tomorrow)
@@ -211,7 +211,7 @@
    (add-to-list 'load-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/lib/tools-2.6.6.5/emacs")
    (setq erlang-root-dir "/usr/local/Cellar/erlang/R14B04/lib/erlang")
    (add-to-list 'exec-path "/usr/local/Cellar/erlang/R14B04/lib/erlang/bin")
-   (require 'erlang-start)
+   ;;; (require 'erlang-start)
 
 
    ;;; from http://alexott.net/en/writings/emacs-devenv/EmacsErlang.html

@@ -1,3 +1,5 @@
 [user]
-	name = John Barnette
-	email = jbarnette@gmail.com
+	name = Tim Snowhite
+	email = tsnowhite@taximagic.com
+[credential]
+	helper = osxkeychain

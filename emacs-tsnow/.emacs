@@ -2,7 +2,7 @@
 
 ;;TURN OFF THE DAMN BUNDT SOUND
 (setq visible-bell t)
-(add-to-list 'load-path "~/my-dotfiles/emacs-tsnow/.emacs.d/elisp/feature-mode")
+(add-to-list 'load-path "~/my/dotfiles/emacs-tsnow/.emacs.d/elisp/feature-mode")
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
@@ -48,7 +48,7 @@
 
 
 (add-to-list 'auto-mode-alist '("\\..*ss" . sass-mode))
-(add-to-list 'load-path "/Users/tsnow/my-dotfiles/emacs-tsnow/.emacs.d/tuareg-2.0.1")
+(add-to-list 'load-path "/Users/tsnow/my/dotfiles/emacs-tsnow/.emacs.d/tuareg-2.0.1")
   (add-to-list 'auto-mode-alist '("\\.ml\\w?" . tuareg-mode))
   (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
   (autoload 'camldebug "camldebug" "Run the Caml debugger" t)
@@ -136,7 +136,7 @@
 
 
 ;;anything.el
-(add-to-list 'load-path "/Users/tsnow/my-dotfiles/emacs-tsnow/anything-config")
+(add-to-list 'load-path "/Users/tsnow/.emacs.d/anything-config")
 ;;(require 'anything-startup)
 
 ;;rcodetools
@@ -144,14 +144,14 @@
 (require 'rcodetools)
 
 ;;peepopen
-(add-to-list 'load-path "~/my-dotfiles/emacs-tsnow/.emacs.d/vendor/textmate.el")
+(add-to-list 'load-path "~/my/dotfiles/emacs-tsnow/.emacs.d/vendor/textmate.el")
 (require 'textmate)
 (textmate-mode)
-(add-to-list 'load-path "~/my-dotfiles/emacs-tsnow/.emacs.d/vendor/")
+(add-to-list 'load-path "~/my/dotfiles/emacs-tsnow/.emacs.d/vendor/")
 (require 'peepopen)
 
 ;;ruby-test-mode
-(add-to-list 'load-path "~/my-dotfiles/emacs-tsnow/.emacs.d/ruby-test.el")
+(add-to-list 'load-path "~/my/dotfiles/emacs-tsnow/.emacs.d/ruby-test.el")
 (require 'ruby-test)
 
 

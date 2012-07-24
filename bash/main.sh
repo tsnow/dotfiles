@@ -40,11 +40,11 @@ have()
 }
 
 ## Completions
-if [ -s "$DOTFILES/bash/completions_dir" ]
-  then for i in `find "$DOTFILES/bash/completions_dir/" -type f -name "*.sh"`; do
-        source "$i";
-        done
-fi
+#if [ -s "$DOTFILES/bash/completions_dir" ]
+#  then for i in `find "$DOTFILES/bash/completions_dir/" -type f -name "*.sh"`; do
+#        source "$i";
+#        done
+#fi
 
 export EDITOR="emacs -nw"
 export VISUAL=$EDITOR
