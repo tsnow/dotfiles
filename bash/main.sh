@@ -20,6 +20,9 @@ os="${uname%% *}";
 if [ -s "$DOTFILES/bash/$os.sh" ]
   then source "$DOTFILES/bash/$os.sh";
 fi
+if [ -s "$DOTFILES/bash/local.sh" ]
+  then source "$DOTFILES/bash/local.sh";
+fi
 #while [ -s "$DOTFILES/bash/$os.sh" ]
 #  then 
 #  source "$DOTFILES/bash/$os.sh";
