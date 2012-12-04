@@ -3,3 +3,17 @@
 	email = tsnowhite@taximagic.com
 [credential]
 	helper = osxkeychain
+[merge]
+	tool = opendiff
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[core]
+	excludesfile = /Users/tsnow/.gitignore_global
+[github]
+[color]
+	ui = true
