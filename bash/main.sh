@@ -57,3 +57,6 @@ export JAVA_HOME=`/usr/libexec/java_home`
 export  P4CONFIG=.p4config
 export       PS1='$(__git_ps1 "[%s] ")\w\\$ '
 export NODE_PATH="/usr/local/lib/node"
+
+export	PLAN9=/usr/local/plan9 export PLAN9
+export	PATH=$PATH:$PLAN9/bin export PATH
