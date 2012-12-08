@@ -49,14 +49,16 @@ have()
 #        done
 #fi
 
-export EDITOR="emacs -nw"
-export VISUAL=$EDITOR
+emacs="emacs -nw"
+export	EDITOR="$emacs"
+export	VISUAL=$EDITOR
+alias emacs="$emacs"
 
-export ARCHFLAGS="-arch x86_64"
-export JAVA_HOME=`/usr/libexec/java_home`
+export	ARCHFLAGS="-arch x86_64"
+export	JAVA_HOME=`/usr/libexec/java_home`
 export  P4CONFIG=.p4config
-export       PS1='$(__git_ps1 "[%s] ")\w\\$ '
-export NODE_PATH="/usr/local/lib/node"
+export	PS1='$(__git_ps1 "[%s] ")\w\\$ '
+export 	NODE_PATH="/usr/local/lib/node"
 
 export	PLAN9=/usr/local/plan9 export PLAN9
 export	PATH=$PATH:$PLAN9/bin export PATH
