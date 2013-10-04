@@ -1,5 +1,8 @@
 source /etc/profile
 
+#source ~/.bash_login
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 export DOTFILES=~/my-dotfiles
 export DEV_DOTFILES=~/dev-dotfiles
 if [ -s "$DEV_DOTFILES/bash/main.sh" ]
@@ -62,3 +65,9 @@ export 	NODE_PATH="/usr/local/lib/node"
 
 export	PLAN9=/usr/local/plan9 export PLAN9
 export	PATH=$PATH:$PLAN9/bin export PATH
+export  GOROOT=/usr/local/Cellar/go/1.0.3/
+export  GOPATH=~/dev/prod/goroot
+export GOROOT=/usr/local/Cellar/go/1.0.3/
+export GOPATH=/Users/tsnow/dev/prod/goroot
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
