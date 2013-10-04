@@ -104,8 +104,8 @@
          (setq-default c-basic-offset 2)
          (setq-default tab-width 2)
 ;)))
-;;Thor
-(add-to-list 'auto-mode-alist '("\\Thorfile\\'" . ruby-mode))
+;;Thor & Bundler
+(add-to-list 'auto-mode-alist '("Thorfile\\'" . ruby-mode) '("Gemfile\\'" . ruby-mode))
 
 
 
