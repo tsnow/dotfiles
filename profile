@@ -92,7 +92,9 @@ export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
 #END MAPNIK
 
 #brew tab-completion
-source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+if [[ $SHELL == "/bin/bash" ]]; then
+source `brew --prefix`/Library/Contributions/brew_bash_completion.sh;
+fi
 
 #PROMPT 
 . /Users/tsnow/git-prompt/git-prompt.sh
