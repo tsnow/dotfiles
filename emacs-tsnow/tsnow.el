@@ -1,3 +1,7 @@
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+
 (add-to-list 'load-path (concat user-specific-dir "/../el-get/el-get/"))
 ;;;; BEGIN el-get ;;http://www.emacswiki.org/emacs/el-get
 (require 'el-get)
