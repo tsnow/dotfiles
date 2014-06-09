@@ -65,9 +65,6 @@ export 	NODE_PATH="/usr/local/lib/node"
 
 export	PLAN9=/usr/local/plan9 export PLAN9
 export	PATH=$PATH:$PLAN9/bin export PATH
-export  GOROOT=/usr/local/Cellar/go/1.0.3/
-export  GOPATH=~/dev/prod/goroot
-export GOROOT=/usr/local/Cellar/go/1.0.3/
-export GOPATH=/Users/tsnow/dev/prod/goroot
+export GOPATH=/Users/tsnow/
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

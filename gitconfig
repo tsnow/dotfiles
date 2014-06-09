@@ -17,3 +17,7 @@
 [github]
 [color]
 	ui = true
+[github]
+	user = tsnow
+[push]
+	default = simple
